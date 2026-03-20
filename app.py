@@ -1,9 +1,8 @@
 import streamlit as st
 import PyPDF2
 import requests
-
-# 🔑 OpenRouter API Key
-API_KEY = "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"
+import os
+API_KEY = os.getenv("API_KEY")
 
 st.set_page_config(page_title="AI Resume Analyzer", page_icon="📄")
 
